@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<head>
+	<title> Quotes Of The Day </title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body onload="window.alert('Page successfully loaded');">  
+
+<style>
+
+body {
+background: #C6FFDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.d {
+  font-family: Brush Script MT, sans-serif;
+  font-size: 80px;
+  text-align:center;
+  color: black; 
+}
+
+.pfont {
+  font-family: Brush Script MT, sans-serif;
+  font-size: 30px;
+  text-align:center;
+  color: red; 
+}
+
+.font{
+font-family: "Berlin Sans FB Demi", Berlin, sans-serif;
+font-size: 20px; 
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+</style>
+
+<body>
+<h1 class="d"> Quotes Of The Day </h1>
+<center>
+<audio controls autoplay>
+<source src="upbeat.mp3" type="audio/mpeg">
+</audio>
+</center>
+
+<center><section>
+<img class="quoteSlides" src="q0.jpg" style="width:35%">
+<img class="quoteSlides" src="q1.jpg" style="width:35%">
+<img class="quoteSlides" src="q2.jpg" style="width:35%">
+<img class="quoteSlides" src="q3.jpg" style="width:35%">
+<img class="quoteSlides" src="q4.jpg" style="width:35%">
+<img class="quoteSlides" src="q5.jpg" style="width:35%">
+<img class="quoteSlides" src="q6.png" style="width:35%">
+<img class="quoteSlides" src="q7.jpg" style="width:35%">
+<img class="quoteSlides" src="q8.jpg" style="width:35%">
+<img class="quoteSlides" src="q9.jpg" style="width:35%">
+<img class="quoteSlides" src="q10.jpg" style="width:35%">
+<img class="quoteSlides" src="q11.jpg" style="width:35%">
+<img class="quoteSlides" src="q12.jpg" style="width:35%">
+</section></center>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("quoteSlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+<center>
+<h3 class="font"> Where My Education Started. </h3>
+	<table>
+  <tr>
+    <th>School</th>
+    <th>State</th>
+    <th>Year</th>
+  </tr>
+  <tr>
+    <td>SK Batangan</td>
+    <td>Terengganu</td>
+    <td>2005-2011</td>
+  </tr>
+  <tr>
+    <td>SMK Seberang Marang</td>
+    <td>Terengganu</td>
+    <td>2012-2016</td>
+  </tr>
+  <tr>
+    <td>Kolej Matrikulasi Pahang</td>
+    <td>Pahang</td>
+    <td>2017-2018</td>
+  </tr>
+  <tr>
+    <td>Universiti Teknologi Mara</td>
+    <td>Terengganu</td>
+    <td>2018-now</td>
+  </tr>
+  
+</table>
+</center>
+<center><p class="pfont"> The roots of education are bitter, but the fruit is sweet. </p></center>
+</body>
+
+</html>
