@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<head>
+	<title> Movie List </title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body onload="window.alert('Page successfully loaded');">  
+
+<style>
+
+body {
+background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.a {
+  font-family: Brush Script MT, sans-serif;
+  font-size: 100px;
+  text-align:center;
+  color: #FFB6C1; 
+}
+
+.f {
+font-family: Courier New;
+font-size: 30px;
+text-align: center;
+color: white;
+}
+
+.all {
+font-family: Bookman Old Style, sans-serif;
+font-size: 20px;
+text-align: center;
+color: white;
+}
+
+</style>
+
+<body>
+<h1 class="a"> Favourite Movies </h1>
+
+<h2 class="f"> 1. Cahaya Cinta Pesantren. </h2>
+<center> <img src="ccp.jpg" height=450 width=450></center>
+<p class="all"> Cerita ni tak adalah menarik sangat cuma pengajaran yang aku dapat dalam 
+cerita ni buatkan cerita ni jadi favourite aku. Kasih sayang seorang ayah terhadap anaknya.
+Walau tak mampu sediakan yang mewah untuk anak, ayah tetap mahu berikan yang terbaik untuk anaknya.
+Tak semua perkara boleh diungkap dengan kata-kata. Kadang kasih sayang sejati adalah kasih sayang 
+yang tak terungkap. 
+</p>
+
+<h2 class="f"> 2. Fast And Furious Series. </h2>
+<center><section>
+
+<img class="ffslides" src="ff7.jpg" height=450 width=450>
+<img class="ffslides" src="ffhs.jpg" height=450 width=450>
+
+</section></center>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("ffslides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+<p class="all"> Cerita ni aku suka mungkin sebab nampak cool. Hehe. Lumba kereta semua tu. 
+Tapi aku paling suka bila tentang friendship diorang. No matter what, Don tried to take care
+of everyone he loves. He did what he wants, what he loves, but in the same time, he didn't
+harm anyone else unless he needs to. Hobbs and Shaw version is the movie that I like the most.
+The dynamic actions are just too cool. And when Hobbs reunited back with his family, I feel great.
+Reuniting with family members after so long are just way too happy for me. Overall, it is their 
+intelligence and advance technology are what making me in awe. 
+</p>
+
+<h2 class="f"> 3. Wreck-It-Ralph Series. </h2>
+<center><section>
+<img class="wirslides" src="wir1.jpg" height=450 width=450>
+<img class="hotslides" src="wir2.jpg" height=450 width=450>
+<img class="wirslides" src="funnywir.jpg" height=450 width=450>
+</section></center>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("wirslides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+<p class="all"> My English teacher asked my whole class to watch this movie when I'm in form three
+ and since then, I'm in love with this movie. Ralph character are just too cool. And for Wreck-It-Ralph 2, 
+ Ralph trying to help his best friend kept me in awe. He knew it is dangerous to do so but he still did it
+ for his best friend, which is hard to find these days. </p>
+
+<h2 class="f"> 4. Hotel Of Transylvania. </h2>
+<center><section>
+<img class="hotslides" src="hot2.jpg" height=450 width=450>
+<img class="hotslides" src="hot3.jpg" height=450 width=450>
+</section></center>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("hotslides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+<p class="all"> I don't know why I love this movie either. Again, it's my English teacher who showed me this movie
+and I instantly fell in love with it. Maybe because the protectiveness of the father for her daughter that I like. 
+And his thinking when he fell in love with a human in Hotel Transylvania 3 that kept me laughing. It's adorable to 
+fall in love again after hundred years of being alone. </p>
+
+</body>
+
+</html>

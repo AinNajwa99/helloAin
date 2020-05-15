@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+
+<head>
+	<title> Bucket List </title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body onload="window.alert('Page successfully loaded');">  
+
+<style>
+
+body {
+background: #DAD299;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #B0DAB9, #DAD299); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.list {
+  font-family: Brush Script MT, sans-serif;
+  font-size: 80px;
+  text-align:center;
+  color: black; 
+}
+
+.q {
+	font-family: Arial Narrow, sans-serif;
+	font-size: 20px;
+}
+
+</style>
+
+<body>
+<h1 class="list"> My Bucket List </h1>
+<center>
+<section>
+<img class="mySlides" src="nz.jpg" style="width:50%">
+<img class="mySlides" src="scn.jpg" style="width:50%">
+<img class="mySlides" src="beach.jpg" style="width:50%">
+<img class="mySlides" src="gc.jpg" style="width:50%">
+<img class="mySlides" src="mp.jpg" style="width:50%">
+<img class="mySlides" src="sf.jpg" style="width:50%">
+<img class="mySlides" src="ys.jpg" style="width:50%">
+<img class="mySlides" src="banff.jpg" style="width:50%">
+<img class="mySlides" src="ap.jpg" style="width:50%">
+<img class="mySlides" src="sl.jpg" style="width:50%">
+<img class="mySlides" src="gbr.jpg" style="width:50%">
+<img class="mySlides" src="nf.jpg" style="width:50%">
+<img class="mySlides" src="pyramids.jpg" style="width:50%">
+<img class="mySlides" src="glacier.jpg" style="width:50%">
+</section>
+<h2><center> THE WORLD </center></h2>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+<video width="450" height="250" controls autoplay>
+<source src="travelnz.mp4" type="video/mp4">
+</video>
+</center>
+
+<h2> 1. Watch Sunrise And Sunset At The Beach. </h2>
+<p class="q"> I've done this before but still I wanna do it again at beautiful places with friends, families, and loved ones. One fine day, Insya Allah. 
+</p>
+
+<h2> 2. Do Something I'm Afraid Of. </h2>
+<p class="q"> Many psychologists have claimed that in order to conquer a fear you must be exposed to that fear — and probably more than once. Start facing your fear today by doing one thing that you are afraid of. Try holding a spider, jumping out of an airplane, climbing to the top of a mountain or even going to the dentist. Do whatever it takes for you to get out of your comfort zone.
+</p>
+
+<h2> 3. Be A Tourist In My Own Country. </h2>
+<p class="q"> I'm a Malaysian but I haven't done exploring my country yet. Not even my own state. So, in few years to come, I'm hoping to go explore and be a tourist in my own beloved Malaysia.
+</p>
+
+<h2> 4. Write A Journal. </h2>
+<p class="q"> I want to write personal journal in years to come whenever I'm on vacation or when I'm doing fun memorable activities.
+</p>
+
+<h2> 5. Learn The Alphabet In Sign Language. </h2>
+<p class="q"> This is something that I've been dying to learn but haven't got the chance too. I'm hoping I'll tick it off my bucket list in years to come.
+</p>
+
+</body>
+
+</html>
